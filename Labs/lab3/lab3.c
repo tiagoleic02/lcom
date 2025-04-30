@@ -13,7 +13,6 @@
 extern uint8_t scancode;
 extern bool two_byte;
 extern int error_flag;
-extern int counter;  // variável para contar chamadas a sys_inb (usada pelo LCF)
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)

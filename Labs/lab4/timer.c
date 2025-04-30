@@ -2,9 +2,10 @@
 #include <lcom/timer.h>
 #include <stdint.h>
 #include "i8254.h"
+#include "timer.h"
 
-int hook_id = TIMER0_IRQ;
-int counter = 0;
+int counter=0;
+int hook_id =TIMER0_IRQ;
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
   if (timer < 0 || timer > 2 || st == NULL) return 1; //Certificar que os argumentos são todos válidos
